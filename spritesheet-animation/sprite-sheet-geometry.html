@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Geometric Animation</title>
+    <style>
+        body {
+            background-color: #0a2e41;
+            display: flex;
+            justify-content: center;
+        }
+        
+        canvas {
+            margin-top: 150px;
+            background-color: #0a2e41;
+        }
+    </style>
+    <script>
+        var canvas;
+        var ctx;
+        var i = 0;
+
+        function draw() {
+            var sprite = document.getElementById("geometry");
+            ctx.drawImage(sprite, i * 288, 0, 384, 288, 0, 0, 384, 288);
+            requestAnimationFrame(draw);
+        }
+
+        function update() {
+            i = (i + 1) % 9;
+        }
+
+        function init() {
+            canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            window.setInterval(update, 500);
+            requestAnimationFrame(draw);
+        }
+        window.onload = init;
+    </script>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="288" height="300"> </canvas>
+
+    <img id="geometry" src="geometry.png" style="display:none" />
+</body>
+
+</html>
