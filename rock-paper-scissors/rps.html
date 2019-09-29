@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors</title>
+
+    <link href="rps.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Baloo+Thambi|Comfortaa|Concert+One" rel="stylesheet" />
+    <link rel="icon" href="rock3.png" type="image/x-icon" />
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="result"></div>
+    <div id="boxes">
+        <div class="round">
+            <p>ROUND ONE</p>
+
+            <div id="oneVs"></div>
+            <p id="one"></p>
+        </div>
+        <div class="round">
+            <p>ROUND TWO</p>
+
+            <div id="twoVs"></div>
+            <p id="two"></p>
+        </div>
+        <div class="round">
+            <p>ROUND THREE</p>
+
+            <div id="threeVs"></div>
+            <p id="three"></p>
+        </div>
+    </div>
+    <div id="button-div">
+        <button id="reset" onclick="playGame(3)">NEW GAME</button>
+    </div>
+</body>
+
+<script src="rps.js"></script>
+
+</html>

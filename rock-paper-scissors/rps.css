@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comfortaa";
+}
+
+h1 {
+    text-align: center;
+    width: 80vw;
+    margin: 4vw;
+    margin-left: 9.7vw;
+    color: #fcca46;
+}
+
+button {
+    padding: 10px 15px;
+    outline: none;
+    font-size: 130%;
+    margin-top: 3vw;
+    background-color: #143642;
+    border-radius: 10px;
+    border: 3px solid #93e1d8;
+    color: #ffa69e;
+}
+
+body {
+    min-width: 400px;
+    background-color: #143642;
+    color: #93e1d8;
+}
+
+body {
+    background-repeat: repeat;
+    background-size: 20%;
+}
+
+img {
+    width: 4vw;
+    height: auto;
+    margin: 0px 2vw;
+    margin-top: 2vw;
+}
+
+.round {
+    width: 16vw;
+    height: 16vw;
+    padding: 5vw;
+    background-color: #264c5a;
+    margin: 0px;
+    display: inline-block;
+    /* overflow: scroll; */
+    border-radius: 5px;
+}
+
+.versus {
+    width: 16vw;
+    height: 16vw;
+}
+
+#boxes {
+    width: 80vw;
+    margin: 0vw 10vw;
+    height: 26vw;
+    overflow: scroll;
+}
+
+#boxes {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 140%;
+}
+
+#one,
+#two,
+#three {
+    margin-top: 2vw;
+    font-weight: normal;
+    color: #dad2d8;
+    font-size: 70%;
+}
+
+#button-div {
+    width: 80vw;
+    margin-left: 10vw;
+    text-align: center;
+}
+
+#result {
+    text-align: center;
+    width: 80vw;
+    height: 40px;
+    font-size: 30px;
+    margin: 15px 0px 15px 10vw;
+}
